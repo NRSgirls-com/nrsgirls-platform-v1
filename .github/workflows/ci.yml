@@ -18,9 +18,9 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '18'
-          cache: 'npm'
+          cache: 'yarn'
           cache-dependency-path: |
-            frontend/nextjs/package-lock.json
+            frontend/nextjs/yarn.lock
 
       - name: Run setup script
         run: |
@@ -32,7 +32,7 @@ jobs:
         run: |
           if [ -d "frontend/nextjs" ] && [ -f "frontend/nextjs/package.json" ]; then
             cd frontend/nextjs
-            npm ci
+            if [ -f "yarn.lock" ]; then yarn install --frozen-lockfile; else npm ci; fi
           fi
 
       - name: Lint and test frontend
@@ -45,5 +45,5 @@ jobs:
         run: |
           if [ -d "frontend/nextjs" ] && [ -f "frontend/nextjs/package.json" ]; then
             cd frontend/nextjs
-            npm run build
+            if [ -f "yarn.lock" ]; then yarn build; else npm run build; fi
           fi

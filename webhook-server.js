@@ -1,3 +1,5 @@
+// Clarifies purpose: this standalone server handles GitHub webhooks only.
+// The Stripe webhook is implemented in `frontend/nextjs/pages/api/webhook.js`.
 const express = require('express');
 const crypto = require('crypto');
 const app = express();
@@ -50,7 +52,7 @@ function verifyGitHubSignature(req, res, next) {
   next();
 }
 
-// Apply verification middleware to webhook endpoint
+// Apply verification middleware to GitHub webhook endpoint
 app.post('/github-webhook', verifyGitHubSignature, (req, res) => {
   const githubEvent = req.headers['x-github-event'];
   console.log(`Received a verified webhook for the '${githubEvent}' event`);
