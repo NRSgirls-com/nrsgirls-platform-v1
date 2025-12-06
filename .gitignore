@@ -13,3 +13,6 @@ logs/
 out/
 *.tsbuildinfo
 .vercel
+
+# Claude Code MCP settings (may contain secrets)
+.claude/settings.json
