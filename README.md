@@ -22,3 +22,23 @@ This repo contains the early scaffolding for a Chaturbate-class platform with ou
 - Build landing + auth screens in Next.js
 - Stand up Postgres + Prisma with Users/Performers/Rooms
 - Add WebSocket presence baseline
+
+---
+
+## 📁 About This Repository
+
+This is the special .github repository for the NRSgirls-com organization, serving dual purposes:
+
+- **Organization Profile:** The `profile/README.md` displays on the organization's GitHub page
+- **Application Code:** Contains the NRSgirls.com streaming platform (Next.js frontend + Node.js backend)
+- **GitHub Templates:** Includes organization-wide issue templates, PR templates, and workflows
+
+## Repository Structure
+
+| Directory | Description |
+|-----------|-------------|
+| `/profile/` | Organization profile displayed on GitHub |
+| `/.github/` | Organization-wide GitHub configuration (issue templates, workflows) |
+| `/frontend/` | Next.js application pages and components |
+| `/nrsgirls-platform/` | Platform core code and scripts |
+| `/docs/` | Technical documentation |
