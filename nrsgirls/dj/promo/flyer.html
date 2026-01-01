@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DJ Recruitment - Musik0fLaW Coalition</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background: linear-gradient(135deg, #0d0d0d 0%, #1a1a2e 50%, #0d0d0d 100%);
+      color: white;
+      min-height: 100vh;
+      padding: 40px;
+    }
+    .container { max-width: 900px; margin: 0 auto; }
+    .header { text-align: center; margin-bottom: 40px; }
+    .logo {
+      background: linear-gradient(90deg, #e94560, #0f3460);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 42px;
+      font-weight: bold;
+    }
+    .subtitle { font-size: 24px; opacity: 0.8; margin: 10px 0; }
+    .live-badge {
+      background: #e94560;
+      display: inline-block;
+      padding: 8px 24px;
+      border-radius: 25px;
+      font-weight: bold;
+    }
+    .beta-banner {
+      background: rgba(233, 69, 96, 0.2);
+      border: 2px solid #e94560;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .section-title {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 25px;
+    }
+    .genres-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 15px;
+      margin-bottom: 40px;
+    }
+    .genre-card {
+      border-radius: 12px;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .genre-card.underground { background: linear-gradient(135deg, #1a1a2e 0%, #e94560 100%); }
+    .genre-card.mainstream { background: linear-gradient(135deg, #16213e 0%, #0f3460 100%); }
+    .genre-icon { font-size: 36px; }
+    .genre-name { font-size: 20px; font-weight: bold; }
+    .genre-desc { opacity: 0.7; font-size: 14px; }
+    .genre-tag {
+      background: rgba(255,255,255,0.2);
+      padding: 3px 10px;
+      border-radius: 12px;
+      font-size: 11px;
+      display: inline-block;
+      margin-top: 5px;
+    }
+    .comp-box {
+      background: linear-gradient(135deg, #16213e 0%, #1a1a2e 100%);
+      border-radius: 16px;
+      padding: 30px;
+      margin-bottom: 40px;
+    }
+    .comp-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      text-align: center;
+    }
+    .comp-item {
+      background: rgba(0,0,0,0.3);
+      padding: 20px;
+      border-radius: 12px;
+    }
+    .comp-value { font-size: 36px; font-weight: bold; }
+    .comp-value.beta { color: #e94560; }
+    .comp-value.percent { color: #00ff88; }
+    .comp-value.hours { color: #ffd700; }
+    .comp-label { opacity: 0.7; }
+    .comp-desc { margin-top: 10px; font-size: 14px; }
+    .cta {
+      text-align: center;
+      padding: 40px;
+      background: linear-gradient(135deg, #e94560 0%, #0f3460 100%);
+      border-radius: 16px;
+      margin-top: 40px;
+    }
+    .cta-title { font-size: 28px; font-weight: bold; margin-bottom: 15px; }
+    .cta-btn {
+      background: white;
+      color: #1a1a2e;
+      border: none;
+      padding: 15px 40px;
+      border-radius: 30px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      opacity: 0.5;
+      font-size: 14px;
+    }
+    .requirements {
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 12px;
+      padding: 25px;
+      margin-bottom: 40px;
+    }
+    .requirements ul { padding-left: 20px; line-height: 2; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <div class="logo">MUSIK0FLAW COALITION</div>
+      <div class="subtitle">NOW RECRUITING DJs</div>
+      <div class="live-badge">LIVE 24/7/365</div>
+    </div>
+
+    <!-- Beta Banner -->
+    <div class="beta-banner">
+      <div style="font-size: 20px; font-weight: bold; margin-bottom: 10px;">
+        BETA TRIAL - LIMITED SPOTS
+      </div>
+      <div>Be one of the first 6 DJs to join our exclusive streaming platform</div>
+    </div>
+
+    <!-- Top 6 Genres -->
+    <h2 class="section-title">TOP 6 GENRES - PICK YOUR LANE</h2>
+    <div class="genres-grid">
+      <div class="genre-card underground">
+        <div class="genre-icon">🏠</div>
+        <div>
+          <div class="genre-name">House</div>
+          <div class="genre-desc">Deep, Tech, Progressive</div>
+          <div class="genre-tag">Underground - Room 1</div>
+        </div>
+      </div>
+      <div class="genre-card underground">
+        <div class="genre-icon">⚡</div>
+        <div>
+          <div class="genre-name">Techno</div>
+          <div class="genre-desc">Industrial, Minimal, Hard</div>
+          <div class="genre-tag">Underground - Room 2</div>
+        </div>
+      </div>
+      <div class="genre-card underground">
+        <div class="genre-icon">🎤</div>
+        <div>
+          <div class="genre-name">Hip-Hop/R&B</div>
+          <div class="genre-desc">Trap, Neo-Soul, Boom Bap</div>
+          <div class="genre-tag">Underground - Room 3</div>
+        </div>
+      </div>
+      <div class="genre-card mainstream">
+        <div class="genre-icon">💃</div>
+        <div>
+          <div class="genre-name">EDM/Dance</div>
+          <div class="genre-desc">Future Bass, Electro, Big Room</div>
+          <div class="genre-tag">Mainstream - Room 4</div>
+        </div>
+      </div>
+      <div class="genre-card mainstream">
+        <div class="genre-icon">🌍</div>
+        <div>
+          <div class="genre-name">Afrobeats</div>
+          <div class="genre-desc">Amapiano, Afro-House, Dancehall</div>
+          <div class="genre-tag">Mainstream - Room 5</div>
+        </div>
+      </div>
+      <div class="genre-card mainstream">
+        <div class="genre-icon">🌙</div>
+        <div>
+          <div class="genre-name">Lo-Fi/Chill</div>
+          <div class="genre-desc">Ambient, Downtempo, Study Beats</div>
+          <div class="genre-tag">Mainstream - Room 6</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Compensation -->
+    <div class="comp-box">
+      <h2 class="section-title">EARN WHILE YOU SPIN</h2>
+      <div class="comp-grid">
+        <div class="comp-item">
+          <div class="comp-value beta">BETA</div>
+          <div class="comp-label">Trial Period</div>
+          <div class="comp-desc">First 6 months - Build your audience</div>
+        </div>
+        <div class="comp-item">
+          <div class="comp-value percent">10%</div>
+          <div class="comp-label">Token Share</div>
+          <div class="comp-desc">Of performer tokens during your sets</div>
+        </div>
+        <div class="comp-item">
+          <div class="comp-value hours">2hrs</div>
+          <div class="comp-label">Minimum Daily</div>
+          <div class="comp-desc">In your selected genre slot</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Requirements -->
+    <div class="requirements">
+      <h3 style="margin-bottom: 15px;">REQUIREMENTS</h3>
+      <ul>
+        <li>Mixcloud Live or equivalent streaming experience</li>
+        <li>OBS or streaming software proficiency</li>
+        <li>Reliable internet connection for live streaming</li>
+        <li>Commitment to minimum 2 hours daily in your genre</li>
+        <li>Professional attitude and reliability</li>
+        <li>Music library appropriate for your selected genre</li>
+      </ul>
+    </div>
+
+    <!-- CTA -->
+    <div class="cta">
+      <div class="cta-title">READY TO JOIN THE COALITION?</div>
+      <div style="opacity: 0.9;">Only 6 spots available - One per genre</div>
+      <button class="cta-btn">APPLY NOW</button>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      NRSgirls.com | Musik0fLaW Coalition | 24/7/365
+    </div>
+  </div>
+</body>
+</html>
