@@ -10,6 +10,7 @@ export * from './types';
 export * from './rooms';
 export * from './obs-config';
 export * from './coalition';
+export * from './profiles';
 
 import { rooms, getActiveRooms, getLiveRooms } from './rooms';
 import { COALITION_BRANDING, DJ_SLOTS, AUDIO_BUS_CONFIG } from './coalition';
